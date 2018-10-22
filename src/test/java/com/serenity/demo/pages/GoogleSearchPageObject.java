@@ -1,12 +1,7 @@
 package com.serenity.demo.pages;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.hasItem;
-import static org.hamcrest.Matchers.not;
-
-import net.serenitybdd.core.pages.PageObject;
-
 import net.serenitybdd.core.annotations.findby.FindBy;
+import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.core.pages.WebElementFacade;
 
 public class GoogleSearchPageObject extends PageObject {
@@ -32,7 +27,7 @@ public class GoogleSearchPageObject extends PageObject {
 	}
 
 	public  String getFirstRecordFromSearchResults(){
-		waitABit(3000);
+		waitABit(1000);
 		return lnkGoogleSearchResults_FirstRecord.getText();
 	}
 
